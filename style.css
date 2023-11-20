@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* GENERAL  */
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  /* height: 100vh; */
+}
+
+hr {
+  width: 100%;
+  color: #444;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* NAVIGATION */
+
+.nav {
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.list-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  padding: 10px 40px;
+  transition: all 0.5s ease;
+  font-weight: 700;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.list-item {
+  height: 100%;
+  /* padding: 30px 0px; */
+  text-decoration: none;
+  align-items: center;
+  color: white;
+  transition: all 2s ease-in;
+}
+
+.list-item-color {
+  color: black;
+}
+
+.list:hover {
+  background-color: #dad6d6;
+}
+
+.nav .list:first-child {
+  margin-right: auto;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0%;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  /* backdrop-filter: blur(10px); */
+  z-index: 2;
+  background-color: #a29f9f;
+  /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); */
+  display: none;
+  /* margin-top: 200px; */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.side-bar li:first-child {
+  text-align: end;
+  display: flex;
+  width: 100%;
+}
+
+.side-bar li {
+  width: 100%;
+  padding: 20px;
+}
+
+.side-bar a {
+  width: 100%;
+}
+
+/* intro */
+
+.title {
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 150px 0 50px 0;
+  text-shadow: -66px -35px 0px 7px rgba(235, 8, 8, 0.7);
+}
+
+.intro-paragraph {
+  line-height: 1.9;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.btn-buy {
+  text-decoration: none;
+  background-color: #444;
+  display: flex;
+  color: white;
+  font-weight: 700;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px 0;
+  transition: all 0.5s ease-in;
+}
+
+.btn-buy:hover {
+  background-color: #333;
+}
+
+section {
+  padding: 150px 0;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.twitter-icon {
+  color: white;
+  font-size: 3rem;
+}
+
+/* section 1 */
+.section-one-title {
+  font-size: 2rem;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.phase-one {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 10px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stick {
+  height: 100px;
+  width: 3px;
+  background-color: white;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* section 2 */
+.section-two-paragraph {
+  line-height: 3;
+  letter-spacing: 1.4px;
+}
+
+@media screen and (max-width: 700px) {
+  .hide-on-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  .side-bar {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  #showSiderbar {
+    display: none;
+  }
+}
