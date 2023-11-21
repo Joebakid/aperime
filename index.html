@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APERIME</title>
     <link rel="stylesheet" href="style.css" />
+     <link rel="icon" href="img/ape logo.jpg">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   </head>
   <body>
     <header>
@@ -14,12 +17,20 @@
         <ul class="list-container side-bar">
           <li class="list">
             <a class="list-item list-item-color" id="hideSidebar" href="#"
-              >CLOSE</a
+              ><ion-icon class="menu-size" name="close-outline"></ion-icon></a
             >
           </li>
 
           <li class="list"><a class="list-item" href="#">Home</a></li>
           <li class="list"><a class="list-item" href="#">Roadmap</a></li>
+          <li class="list"><a class="list-item" target="_blank" href="https://aperime.gitbook.io/aperimewhitepaper/economics/whitepaper">WhitePaper</a></li>
+
+           <div class="socials">
+          <ion-icon class="twitter-icon" name="logo-twitter"></ion-icon>
+          <ion-icon class="twitter-icon" name="logo-discord"></ion-icon>
+          
+        </div>
+
         </ul>
         <!-- FULL SCREEN NAV -->
         <ul class="list-container">
@@ -33,7 +44,7 @@
             <a class="list-item list-item-color" href="#">Roadmap</a>
           </li>
           <li class="list" id="showSiderbar">
-            <a class="list-item list-item-color" href="#">MENU</a>
+            <a class="list-item list-item-color" href="#"><ion-icon class="menu-size" name="menu-outline"></ion-icon></a>
           </li>
         </ul>
       </nav>
@@ -41,22 +52,21 @@
       <div class="intro container">
         <h1 class="title">APERIME</h1>
         <p class="intro-paragraph">
-          we're on a mission to redefine the NFT landscape by introducing the
-          revolutionary DRC20 chain. <br>
+         1200 unique APEPRIME NFTs in #DRC20 network.. <br>
+         the hilarious disruptor that's turning on its head. <br>
           Join Our Mint on drc-20.org
         </p>
 
-        <div class="socials">
-          <ion-icon class="twitter-icon" name="logo-twitter"></ion-icon>
-          <ion-icon class="twitter-icon" name="logo-discord"></ion-icon>
-          <ion-icon class="twitter-icon" name="logo-twitter"></ion-icon>
-        </div>
+       
 
-        <a class="btn-buy" href="https://doggy.market/fiwb">MINT NOW</a>
+        <a class="btn-buy" target="_blank" href="https://doggy.market/fiwb">MINT NOW</a>
 
+
+         
       
       </div>
 
+     
 
     </header>
 
@@ -102,24 +112,52 @@
     <section class="section-two">
       <div class="container">
 
-        <h3 class="section-one-title">What is Aperime?</h3>
+        <h2 class="section-one-title">What is Aperime?</h2>
         
 
         <p class="section-two-paragraph">
-          Welcome to Aperime – Where Boundless Possibilities Unfold. Explore a
-          new frontier of NFTs that transcend traditional boundaries. Our
-          collection not only captivates with artistic brilliance but also
-          unlocks unparalleled utility, the secret of which awaits your
-          discovery. 
+          Aperime NFT isn't your typical project; it's a dynamic movement fueled by our passionate community, dedicated to bringing meaningful change to the digital collectibles realm. Built to be borderless, Aperime seamlessly integrates DRC-20 simplifying transactions and eradicating high gas fee's. 
         </p>
       </div>
     </section>
 
-   
+    <hr>   
 
     <section class="section-three">
-      <div class="container"></div>
+      <div class="container">
+<h2 class="section-Two-title">Token Economics</h2>
+
+<h3><b>$APRM Tokenomics </b></h3>
+
+<h4 class="supply"> Maximum Supply: 32,000,000 $APRM</h4>
+  <br>
+  <h4 class="initial supply"> Initial Supply: 32,000,000 $APRM (100%)</h4>
+  <br>
+  <h4 class="Distribution"> Distribution and Lockups:</h4>
+ 
+  <ul class="lockup">
+    <li>Aperime Holders: 16,000,000 (Aperime Special for NFT owners)</li>
+    <li>Team Allocation: 4,800,000 $APRM (Locked and slowly vested)</li>
+    <li>Community and Airdrop: 3,200,000 $APRM (For community rewards and airdrops)</li>
+    <li>Liquidity Pool: 4,800,000 $APRM (To support trading pairs)</li>
+    <li>Partnership: 3,200,000 (For joint agreements)</li>
+  </ul>
+
+   
+  <div>
+    <canvas style="height: 400px;" id="myChart"></canvas>
+  </div>
+   
+
+      </div>
     </section>
+
+
+
+<footer>
+
+</footer>
+
   </body>
   <script src="script.js"></script>
   <!-- ICONS START-->
@@ -142,4 +180,7 @@
 ></script>
 
 <!-- END -->
+
+
+
 </html>

@@ -176,9 +176,15 @@ section {
   font-size: 3rem;
 }
 
-/* section 1 */
-.section-one-title {
+.menu-size {
   font-size: 2rem;
+  color: black;
+}
+
+/* section 1 */
+.section-one-title,
+.section-Two-title {
+  font-size: 3rem;
   margin: 60px 0;
   text-align: center;
 }
@@ -217,6 +223,19 @@ section {
 .section-two-paragraph {
   line-height: 3;
   letter-spacing: 1.4px;
+}
+
+.lockup {
+  margin: 30px 0;
+}
+
+.lockup li {
+  padding: 20px 0;
+}
+
+canvas {
+  height: 400px;
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
