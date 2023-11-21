@@ -43,3 +43,14 @@ new Chart(ctx, {
     },
   },
 });
+
+// FAQ
+
+function toggleAnswer(questionNumber) {
+  var answer = document.getElementById("answer" + questionNumber);
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
