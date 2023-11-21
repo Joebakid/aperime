@@ -98,7 +98,7 @@ body {
   width: 250px;
   /* backdrop-filter: blur(10px); */
   z-index: 2;
-  background-color: #a29f9f;
+  background-color: #1c1a1a;
   /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); */
   display: none;
   /* margin-top: 200px; */
@@ -165,20 +165,22 @@ section {
 }
 
 .socials {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  margin: 40px 0;
+  display: block;
 }
 
 .twitter-icon {
   color: white;
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 .menu-size {
   font-size: 2rem;
   color: black;
+}
+
+.menu-color-close {
+  font-size: 2rem;
+  color: white;
 }
 
 /* section 1 */
