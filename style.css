@@ -32,13 +32,16 @@ hr {
   align-items: center;
   flex-direction: column;
   z-index: -1;
-  /* width: 100%; */
 }
 
 body {
   background-color: black;
   color: white;
   overflow-x: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* NAVIGATION */
@@ -50,11 +53,10 @@ body {
   left: 0;
   right: 0px;
   z-index: 1;
-  overflow-x: hidden;
 }
 
 .list-container {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -464,7 +466,7 @@ canvas {
   }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 901px) {
   #showSiderbar {
     display: none;
   }
