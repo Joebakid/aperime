@@ -4,14 +4,21 @@ const body = document.querySelector("body");
 
 const hideSidebar = document.querySelector("#hideSidebar");
 
+function closeSidebar() {
+  sidebar.style.display = "none";
+  body.style.overflowY = "visible";
+}
+
 showSidebar.addEventListener("click", function () {
   sidebar.style.display = "flex";
   body.style.overflowY = "hidden";
 });
 
-hideSidebar.addEventListener("click", function () {
-  sidebar.style.display = "none";
-  body.style.overflowY = "visible";
+hideSidebar.addEventListener("click", closeSidebar);
+
+// Add event listeners to "Home" and "Roadmap" links
+document.querySelectorAll(".link-to").forEach(function (link) {
+  link.addEventListener("click", closeSidebar);
 });
 
 // GRAPH
