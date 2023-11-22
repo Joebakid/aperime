@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
      <link rel="icon" href="img/ape logo.jpg">
      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -16,8 +16,8 @@
         <!-- SIDEBAR -->
         <ul class="list-container side-bar">
           <li class="list">
-            <a class="list-item list-item-color" id="hideSidebar" href="#"
-              ><ion-icon class="menu-color-close" name="close-outline"></ion-icon></a
+            <a class="list-item list-item-color"   id="hideSidebar" href="#"
+              ><ion-icon class="menu-color-close"  name="close-outline"></ion-icon></a
             >
           </li>
 
@@ -42,27 +42,28 @@
           <li class="list">
             <img class="logo" src="img/ape logo.jpg" alt="" />
           </li>
-          <li class="list hide-on-mobile">
+          <li class="list hide-on-mobile" data-aos="fade-down" data-aos-duration="2000">
             <a class="list-item list-item-color-home" href="#">Home</a>
           </li>
-          <li class="list hide-on-mobile">
+          <li class="list hide-on-mobile" data-aos="fade-down" data-aos-duration="2000">
             <a class="list-item list-item-color" href="#">Roadmap</a>
           </li>
-          <div class="item list-item-socials-container">
+          <div class="item list-item-socials-container" data-aos="fade-down" data-aos-duration="2000">
             <li class="list"><a class="list-item list-item-socials" target="_blank" href="https://twitter.com/AperimeNft"> Twitter</a></li>
             <li class="list"><a class="list-item list-item-socials" target="_blank" href="https://zealy.io/c/aperime/questboard">Zealy</a></li>
               <li class="list"><a class="list-item list-item-socials" target="_blank" href="https://discord.com/invite/2vy6ad9JYQ">Discord</a></li>
-              <li class="list"><a class="list-item list-item-socials target="_blank" href="https://zealy.io/c/aperime/questboard">Collab Form</a></li>
+              <li class="list"><a class="list-item list-item-socials" target="_blank" href="https://zealy.io/c/aperime/questboard">Collab Form</a></li>
           </div>
           
           <li class="list" id="showSiderbar">
-            <a class="list-item list-item-color-icon" href="#"><ion-icon class="menu-size" name="menu-outline"></ion-icon></a>
+            <a class="list-item list-item-color-icon" href="#"><ion-icon class="menu-size" data-aos="fade-down" name="menu-outline"></ion-icon></a>
           </li>
         </ul>
       </nav>
 
       <div class="intro container">
-        <h1 class="title">APERIME</h1>
+        <!-- <h1 class="title">APERIME</h1> -->
+        <span class="logo-title title"> APERIME </span>
         <p class="intro-paragraph">
         <span class="value-of-ape value-of-ape-size">1200</span>  unique APEPRIME NFTs in <span class="value-of-ape">DRC-20 </span>network.. <br>
          the hilarious disruptor that's turning on its head. <br>
@@ -326,7 +327,7 @@
 </footer>
 
   </body>
-  <script src="script.js"></script>
+ 
   <!-- ICONS START-->
   <script
     type="module"
@@ -338,6 +339,13 @@
   ></script>
   <!-- ICON END -->
 
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- END -->
+
   <!-- GSAP -->
   <script
   src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
@@ -345,9 +353,21 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 ></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
+  integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"
+  integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 
 <!-- END -->
-
+<script src="script.js"></script>
 
 
 </html>

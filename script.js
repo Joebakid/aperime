@@ -54,3 +54,18 @@ function toggleAnswer(questionNumber) {
     answer.style.display = "block";
   }
 }
+
+const tl = gsap.timeline({ defaults: { duration: 1, ease: "Power2.easeOut" } });
+
+//Animting the logo with gsap
+// const logo = document.querySelector(".logo-title");
+// const letters = logo.textContent.split("");
+
+// logo.textContent = "";
+
+// letters.forEach((letter) => {
+//   logo.innerHTML += '<span class="letter">' + letter + "</span>";
+// });
+
+gsap.fromTo(".logo-title", { opacity: 0 }, { opacity: 1, duration: 5 });
+gsap.fromTo(".logo", { scale: 0.5 }, { scale: 1, duration: 5 });
