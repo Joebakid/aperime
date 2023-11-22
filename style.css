@@ -82,6 +82,18 @@ body {
   color: black;
 }
 
+.list-item-color-icon,
+list-item-color-home,
+.list-item-color-home,
+.list-item-socials {
+  color: black;
+}
+
+.list-item-socials-container {
+  display: none;
+  /* display: flex; */
+}
+
 .list:hover {
   background-color: #dad6d6;
 }
@@ -141,13 +153,17 @@ body {
   padding: 20px;
 }
 
+.value-of-ape {
+  color: rgb(222, 106, 106);
+}
+
 .btn-buy {
   text-decoration: none;
   background-color: #444;
   display: flex;
   color: white;
   font-weight: 700;
-  width: 50%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -186,9 +202,10 @@ section {
 /* section 1 */
 .section-one-title,
 .section-Two-title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 60px 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .phase-one {
@@ -231,8 +248,29 @@ section {
   margin: 30px 0;
 }
 
-.lockup li {
+.card {
+  background-color: #393636;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 20px 0;
+}
+
+.number,
+.card-h3 {
+  font-size: 1.2rem;
+}
+
+.number {
+  background-color: red;
+  border-radius: 45%;
+  padding: 10px;
 }
 
 canvas {
@@ -296,5 +334,29 @@ canvas {
 @media screen and (min-width: 701px) {
   #showSiderbar {
     display: none;
+  }
+
+  .list-item-socials-container {
+    /* display: none; */
+    display: flex;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .card {
+    width: 40%;
+  }
+
+  .lockup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .btn-buy {
+    width: 50%;
   }
 }
