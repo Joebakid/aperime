@@ -6,11 +6,12 @@ const hideSidebar = document.querySelector("#hideSidebar");
 
 showSidebar.addEventListener("click", function () {
   sidebar.style.display = "flex";
-  //   menuContent.textContent = "CLOSE";
+  body.style.overflowY = "hidden";
 });
 
 hideSidebar.addEventListener("click", function () {
   sidebar.style.display = "none";
+  body.style.overflowY = "visible";
 });
 
 // GRAPH
@@ -55,6 +56,8 @@ function toggleAnswer(questionNumber) {
   }
 }
 
+// GSAP ANIMATION
+
 const tl = gsap.timeline({ defaults: { duration: 1, ease: "Power2.easeOut" } });
 
 //Animting the logo with gsap
@@ -74,5 +77,12 @@ gsap.fromTo(
   { y: 0, opacity: 1, delay: 2, stagger: 0.05, ease: "back.out(3)" }
 );
 
-// gsap.fromTo(".logo-title", { opacity: 0 }, { opacity: 1, duration: 5 });
 gsap.fromTo(".logo", { scale: 0.5 }, { scale: 1, duration: 5 });
+gsap.fromTo(
+  ".intro-paragraph",
+  { opacity: 0 },
+  { opacity: 1, duration: 5 },
+  "<50%"
+);
+
+// gsap.fromTo(".btn-buy", { opacity: 0.5 }, { opacity: 1, duration: 10 });
