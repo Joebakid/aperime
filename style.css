@@ -38,8 +38,7 @@ hr {
 body {
   background-color: black;
   color: white;
-  overflow-x: hidden;
-  width: 100%;
+  /* overflow-x: hidden; */
 }
 
 /* NAVIGATION */
