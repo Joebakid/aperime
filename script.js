@@ -38,7 +38,7 @@ new Chart(ctx, {
     datasets: [
       {
         label: "32,000,000 of Total",
-        data: [50, 15, 10, 15, 10],
+        data: [8, 7.1, 3.4, 3.2, 3],
         borderWidth: 1,
       },
     ],
