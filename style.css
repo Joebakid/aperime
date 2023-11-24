@@ -170,7 +170,8 @@ list-item-color-home,
 }
 
 .value-of-ape {
-  color: rgb(222, 106, 106);
+  color: rgb(205, 78, 5);
+  font-weight: bolder;
 }
 
 .value-of-ape-size {

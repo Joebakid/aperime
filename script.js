@@ -28,10 +28,10 @@ const ctx = document.getElementById("myChart");
 new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ["Team wallet", "DQ5", "DDM", "DUL", "D5Y"],
+    labels: ["Top wallet", "DQ5", "DDM", "DUL", "D5Y"],
     datasets: [
       {
-        label: "32,000,000 of Total",
+        label: "21,000,000 of Total",
         data: [8, 7.1, 3.4, 3.2, 3],
         borderWidth: 1,
       },
