@@ -21,6 +21,17 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
+  background-image: url("img/doge-wp\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+  /* filter: blur(5px); */
+}
+
+.nav,
+.intro {
+  position: relative;
+  z-index: 1;
+  /* filter: blur(5px); */
 }
 
 hr {
@@ -32,11 +43,12 @@ hr {
   display: flex;
   align-items: center;
   flex-direction: column;
-  z-index: -1;
+  z-index: 1;
 }
 
 body {
   background-color: black;
+
   color: white;
   overflow-x: hidden;
   margin: 0;
@@ -147,10 +159,10 @@ list-item-color-home,
 /* intro */
 
 .title {
-  font-weight: 600;
+  font-weight: bolder;
   font-size: 3.5rem;
   margin: 170px 0 50px 0;
-  z-index: -1;
+  z-index: 1;
   /* text-shadow: -66px -35px 0px 7px rgba(235, 8, 8, 0.7); */
 }
 
@@ -161,6 +173,8 @@ list-item-color-home,
   margin-top: 50px;
   padding: 20px;
   text-transform: uppercase;
+  font-weight: bolder;
+  color: rgb(235, 235, 244);
 }
 
 .value-of-ape {
