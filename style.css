@@ -27,13 +27,6 @@ header {
   /* filter: blur(5px); */
 }
 
-.nav,
-.intro {
-  position: relative;
-  z-index: 1;
-  /* filter: blur(5px); */
-}
-
 hr {
   width: 100%;
   color: #444;
@@ -221,6 +214,7 @@ section {
 .menu-size {
   font-size: 2rem;
   color: black;
+  /* width: 100%; */
 }
 
 .menu-color-close {
