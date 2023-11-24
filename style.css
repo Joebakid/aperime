@@ -20,7 +20,7 @@
 header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   background-image: url("img/doge-wp\ \(1\).jpg");
   background-size: cover;
   background-position: center;
