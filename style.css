@@ -65,12 +65,11 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* padding: 10px; */
 }
 
 .list {
   list-style: none;
-  padding: 10px 40px;
+  padding: 2px 4px;
   transition: all 0.5s ease;
   font-weight: 700;
 }
@@ -214,7 +213,6 @@ section {
 .menu-size {
   font-size: 2rem;
   color: black;
-  /* width: 100%; */
 }
 
 .menu-color-close {
