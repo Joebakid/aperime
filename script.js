@@ -28,13 +28,7 @@ const ctx = document.getElementById("myChart");
 new Chart(ctx, {
   type: "bar",
   data: {
-    labels: [
-      "Aperime Holders",
-      "Team Allocation",
-      "Community and Airdrop",
-      "Liquidity Pool",
-      "Partnership",
-    ],
+    labels: ["Team wallet", "DQ5", "DDM", "DUL", "D5Y"],
     datasets: [
       {
         label: "32,000,000 of Total",
