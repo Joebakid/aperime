@@ -155,6 +155,7 @@ list-item-color-home,
   font-size: 3.5rem;
   margin: 170px 0 50px 0;
   z-index: 1;
+  /* width: 100%; */
   /* text-shadow: -66px -35px 0px 7px rgba(235, 8, 8, 0.7); */
 }
 
